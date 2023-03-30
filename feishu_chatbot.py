@@ -38,7 +38,7 @@ def generate_reply(message, is_group):
     }
 
     response = requests.post(
-        "https://openapi.braveguozhi.com/v1/chat/completions",
+        openai.api_base,
         headers=headers,
         data=json.dumps(data),
     )
