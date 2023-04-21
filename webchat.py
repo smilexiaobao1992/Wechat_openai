@@ -21,7 +21,7 @@ def wechat():
         nonce = request.args.get('nonce', '')
         echostr = request.args.get('echostr', '')
         # 替换为自己的Token字符串
-        token = app.config['b5728cf9ec6801dedf2ec929f5ff99ec']
+        token = app.config['your_api_secret']
         data = [token, timestamp, nonce]
         data.sort()
         # 将数据拼接成字符串并进行SHA1加密
